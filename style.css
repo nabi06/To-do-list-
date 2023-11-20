@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(215, 215, 217, 0.5), transparent), /* red overlay */
+        url('./image.jpg');
+    /* background-image: url(./OR68V80.jpg); */
+    background-size: cover;
+    background-position: center; /* Center the image on the page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.container{
+    margin-top: 100px;
+    width:fit-content;
+    height: auto;
+    max-width: 50%;
+    height: auto;
+    max-height: fit-content;
+    background: transparent;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+}
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    
+    padding-right: 10px;
+}
+.cont1 input{
+    height: 6vh;
+    width: 450px;
+    border :none;
+    background-color: transparent;
+    padding-left: 20px;
+}
+.cont1 input:focus{
+    outline: none;
+}
+.cont1 button{
+    height: 4vh;
+    background-color: transparent;
+    border: none;
+    
+}
+.button-img{
+    height:30px;
+    width:30px;
+}
+.add-container .Radio-b{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    color: orange;
+    margin-right: 10px;
+    
+}
+.add-container .Radio-la{
+    
+    font-size: 3vh;
+}
+.add-container .Newf{
+    
+    margin-bottom: 10px;
+}
+.Radio-b:checked + .Radio-b {
+    background-color: orange;
+    /* Additional styles for the checkmark */
+}
+.Radio-b:checked + .Radio-la{
+    text-decoration: line-through;
+    width: fit-content;
+    max-width:fit-content;
+}
+.Cross{
+    border: none;
+    background-color: transparent;
+    margin-left: 50px;
+}
